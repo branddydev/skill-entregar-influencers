@@ -11,7 +11,10 @@ Pasos recomendados en el workflow:
 3. Acción **Send Email** (plantilla de abajo).
 4. (Opcional) Añadir tag `influencer-entregada` y nota interna con `{{inboundWebhookRequest.influencer_name}}`.
 
-## Email al cliente (plantilla)
+## Email diseñado (HTML) — `email-entrega.html`
+Versión con diseño (dark/morado, mobile-first, banner de portada desde Cloudinary, botones a prueba de Gmail/Outlook, merge fields ya puestos). En GHL: Marketing → Emails → Templates → **New → Code Editor** (HTML) → pegar el archivo entero → guardar como "Influencer IA · Entrega" → en el workflow, acción *Send Email* → elegir esa plantilla. Asunto y preheader abajo. La versión en texto plano de más abajo es solo fallback.
+
+## Email al cliente (plantilla de texto — fallback)
 
 **Asunto:** Tu influencer IA está lista 🎉 — {{inboundWebhookRequest.influencer_name}}
 
